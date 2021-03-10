@@ -626,53 +626,71 @@
     }
     /* projects */
     
-    #projects h1 {
+    .project-title h1 {
         text-align: center;
-        margin-top: 25px;
-        font-size: 45px;
+        text-transform: uppercase;
+        font-size: 50px;
         color: #1a82e2;
-    }
-    
-    .edu {
-        min-width: 100vh;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 20px;
+        font-weight: 600;
     }
     
     .cards {
-        width: 35%;
-        height: 500px;
-        text-align: center;
-        padding: 15px;
-        border: 1px solid #ffffffcc;
-        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
     
-    .cards .card-title p {
-        font-size: 30px;
-        font-style: italic;
+    .inner-card-1 {
+        width: 40%;
+        border: 2px solid #1a82e2;
+        margin: 20px;
+        padding: 20px;
+        height: 350px;
+    }
+    
+    .inner-card-2 {
+        width: 40%;
+        border: 2px solid #1a82e2;
+        margin: 20px;
+        padding: 20px;
+        height: 350px;
+    }
+    
+    .card-title {
         color: #ffffffcc;
+        text-align: center;
+        font-size: 25px;
     }
     
-    .cards:hover {
-        border: 2px solid #ffffffcc;
-    }
-    
-    .cards .card-text {
-        font-size: 15px;
-        line-height: 25px;
+    .card-text p {
         color: #8a94a783;
     }
     
-    @media(max-width:1024px) {
+    @media(max-width:768px) {
         .card-title {
-            font-size: 15px;
+            font-size: 18px;
         }
         .card-text p {
-            font-size: 11px;
+            font-size: 12px;
+        }
+        .inner-card-1,
+        .inner-card-2 {
+            width: 50%;
+        }
+    }
+    
+    @media(max-width:425px) {
+        .card-title {
+            font-size: 12px;
+        }
+        .cards {
+            display: block;
+        }
+        .inner-card-1,
+        .inner-card-2 {
+            width: 90%;
+            height: 250px;
         }
     }
     
@@ -695,18 +713,6 @@
         .time-head h1 {
             font-size: 30px;
             text-align: center;
-        }
-    }
-    
-    @media(max-width:768px) {
-        .edu {
-            flex-direction: column;
-            align-items: center;
-        }
-        .cards {
-            width: 55%;
-            height: 400px;
-            margin: 25px;
         }
     }
     
