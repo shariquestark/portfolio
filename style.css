@@ -657,6 +657,14 @@
         height: 350px;
     }
     
+    .inner-card-3 {
+        width: 40%;
+        border: 2px solid #1a82e2;
+        margin: 20px;
+        padding: 20px;
+        height: 350px;
+    }
+    
     .card-title {
         color: #ffffffcc;
         text-align: center;
@@ -668,6 +676,9 @@
     }
     
     @media(max-width:768px) {
+        .cards {
+            display: block;
+        }
         .card-title {
             font-size: 18px;
         }
@@ -675,8 +686,12 @@
             font-size: 12px;
         }
         .inner-card-1,
-        .inner-card-2 {
-            width: 50%;
+        .inner-card-2,
+        .inner-card-3 {
+            width: 80%;
+            height: 30vh;
+            margin-left: 100px;
+            margin-right: 100px;
         }
     }
     
@@ -688,9 +703,12 @@
             display: block;
         }
         .inner-card-1,
-        .inner-card-2 {
+        .inner-card-2,
+        .inner-card-3 {
             width: 90%;
             height: 250px;
+            margin-left: 0;
+            margin-right: 0;
         }
     }
     
