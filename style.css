@@ -671,6 +671,10 @@
         font-size: 25px;
     }
     
+    .card-text {
+        overflow: hidden;
+    }
+    
     .card-text p {
         color: #8a94a783;
     }
@@ -710,6 +714,9 @@
             margin-left: 0;
             margin-right: 0;
         }
+        .card-text p {
+            font-size: 11px;
+        }
     }
     
     @media(max-width:620px) {
@@ -731,6 +738,10 @@
         .time-head h1 {
             font-size: 30px;
             text-align: center;
+        }
+        /* cards text */
+        .card-text p {
+            font-size: 11px;
         }
     }
     
